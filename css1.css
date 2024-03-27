@@ -1,0 +1,250 @@
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@800&family=Montserrat:wght@800&family=Open+Sans:wght@300;400;700&family=Roboto+Mono:wght@600&family=Sometype+Mono:wght@700&display=swap');
+
+/* Reset */
+* {
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+html {
+    background-color: #f5f5f5;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+.nav {
+    /* position: fixed; */
+    padding: 5vh;
+    height: 4vh;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    background: url("3rd\ logo.png") no-repeat 5vw/18vh;
+}
+.nav ul {
+    
+    display: flex;
+    list-style: none;
+}
+.nav a, .nav li {
+    transition: transform;
+    color: black;
+    padding: 0 1.5rem;
+    text-decoration: none;
+}
+.nav li:hover {
+    transform: rotate(2deg);
+}
+
+/* Home Container */
+/* .icon{
+    margin-top: 20px;
+} */
+.home-container {
+    background-color: #f5f5f5;
+    min-height: 100vh;  
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh;
+}
+
+.profile img {
+    /* border-radius: 400px; */
+    width: 58vh;
+    /* margin-bottom: -33px; */
+    margin-left: 5vw;
+}
+
+.info {
+    
+    margin-left: 85px;
+    text-align: left;
+    font-size: 45px;
+    max-width: 50%;
+}
+
+.small-info {
+    font-size: 20px;
+}
+
+/* CV Button */
+.cv-button {
+    width: 50%;
+    height: 6vh;
+    border-radius: 18px;
+    color: white;
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    border-style: none;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.cv-button:hover {
+    color: rgb(15, 15, 15);
+    background-color: #ffffff;
+}
+
+/* Icon */
+.icon a {
+    text-decoration: none;
+}
+
+/* about container */
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    /* padding causing lap in different aspect ratio */
+    padding: 2rem; 
+    box-sizing: border-box;
+}
+.about-img{
+    
+    position: relative;
+    float: left;
+    /* padding causing lap in different aspect ratio */
+    margin-left: 5%;
+}
+.p-header{
+    font-size: 70px;
+}
+.p-body{
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about-info {
+    font-weight: light;
+    padding: 10rem;
+    color:white;
+    position: relative;
+    width: 70%;
+    /* left: 2%; */
+    font-size: 20px ;
+}
+
+
+/* Service Container */
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;  
+    /* width: 100%;  */
+    background-color:#f5f5f5;
+    padding: 2rem;
+    box-sizing: border-box; 
+    
+    flex-direction: column; /* Align items in a column */
+}
+
+
+.service-head {
+    
+    font-size: 1rem;
+    font-weight: 300;
+    color:black;
+    /* margin-bottom: 10vh; */
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: left;
+}
+
+.container-service {
+    
+    cursor: pointer;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.container-service p {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.service-one,
+.service-two,
+.service-three {
+    transition: transform 0.3s ease;
+    margin: 20px; 
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    color: white;
+    background: rgb(15, 15, 15);
+    box-sizing: border-box; 
+}
+
+.service-one:hover,
+.service-two:hover,
+.service-three:hover {
+    transform: translateY(-20px);
+}
+
+/* proj part */
+.proj-container,
+.secondproj-container,
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    
+    background: rgb(15, 15, 15);
+}
+.boxes {
+    margin: 100px;
+    width: 20vh;
+}
+
+/* contact part */
+.container-contact{
+    background-color:#f5f5f5;
+    justify-content: center ;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+/* .textbox{
+    display: block;
+} */
+input{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    height: 50px;  
+}
+.map-contact{
+    
+    justify-content: center ;
+    text-align: center;
+    position: relative;
+    float:left;
+}
+
+
+
+
